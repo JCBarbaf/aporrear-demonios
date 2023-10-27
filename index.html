@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylebackground.css">
+	<link rel="shortcut icon" href="img/icono_aporrear.svg" type="image/x-icon">
+    <title>Empipa el dimoni!</title>
+</head>
+
+<body onmousedown="cambiarMazo(2)" onmouseup="cambiarMazo(1)">
+    <h1 class="titulo">Empipa el dimoni!</h1>
+    <!-- Boton para volver -->
+    
+    <!-- Fondo -->
+    <main id="fondo">
+        <img src="img/fondo_empipa_el_dimoni.svg" alt="fondo_empipa_el_dimoni" class="fondoDimoni" draggable="false">
+        <div class="circle cataleg"></div>
+        <div class="circle ajuda"></div>
+        <div class="circle explorador"></div>
+        <div class="circle tramits"></div>
+    </main>
+    <p id="score">Punts: 0</p>
+    <p id="timer">00:00</p>
+    <img id="hole1" src="img/hoyo.svg" onmousedown="mazazo(0)" draggable="false">
+    <img id="hole2" src="img/hoyo.svg" onmousedown="mazazo(1)" draggable="false">
+    <img id="hole3" src="img/hoyo.svg" onmousedown="mazazo(2)" draggable="false">
+    <img id="hole4" src="img/hoyo.svg" onmousedown="mazazo(3)" draggable="false">
+    <img id="hole5" src="img/hoyo.svg" onmousedown="mazazo(4)" draggable="false">
+    <img id="hole6" src="img/hoyo.svg" onmousedown="mazazo(5)" draggable="false">
+    <img id="hole7" src="img/hoyo.svg" onmousedown="mazazo(6)" draggable="false">
+    <img id="hole8" src="img/hoyo.svg" onmousedown="mazazo(7)" draggable="false">
+    <img id="hole9" src="img/hoyo.svg" onmousedown="mazazo(8)" draggable="false">
+    <img id="hole10" src="img/hoyo.svg" onmousedown="mazazo(9)" draggable="false">
+    <img id="hole11" src="img/hoyo.svg" onmousedown="mazazo(10)" draggable="false">
+    <img id="hole12" src="img/hoyo.svg" onmousedown="mazazo(11)" draggable="false">
+    <div id="menu-inicial">
+        <h2>Empipa el dimoni!</h2>
+        <div id="row1">
+            <img src="img/dimoni.svg" alt="dimoni" title="dimoni">
+            <p> = <span class="bien">+1</span></p>
+        </div>
+        <div id="row2">
+            <img src="img/sant_antoni.svg" alt="dimoni" title="dimoni">
+            <p> = <span class="mal">-1</span></p>
+        </div>
+        <button onclick="comenzar()">Començar</button>
+    </div>
+    <div id="menu-timeOut">
+        <h2>Molt bé!</h2>
+        <p id="puntos-final">Has aconseguit: 0 punts</p>
+        <a href="">Tornar a jugar</a>
+    </div>
+    <img id="mazo" src="img/mazo1.svg">
+    <img src="img/demoni2.svg" class="demoni1 fondo" draggable="false">
+    <img src="img/demoni1.svg" class="demoni2 fondo" draggable="false">
+    <script src="js/script.js"></script>
+</body>
+
+</html>
